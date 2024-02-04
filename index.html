@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />  
+    <!-- font style from google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Register Form</title>
+</head>
+<body class="bg-color">
+    <div class="box-form">
+
+    <h1>Registration Form </h1>
+    <!-- form -->
+    <form action="#" method="POST">
+            
+    <!-- input field for fullname -->
+    <div class="label-field">
+        <label for="fullname" id="fullname">Name</label>
+    </div>
+    <div class="field-group fullname">
+    <div class="field">
+        <input class="input-field" type="text" name="fullname" id="firstname" placeholder="" required />
+        <br/>
+        <label for="firstname">First Name</label>
+    </div>
+    <div class="field">
+        <input class="input-field" type="text" name="fullname" id="lastname" placeholder="" />
+        <br />
+        <label for="lastname" class="label-left">Last Name</label>
+    </div>
+    </div>
+        <br/>
+
+    <!-- input field for email -->
+    <div class="label-field">
+    <label for="email">Email</label>
+    </div>
+    <div class="field-group">
+        <input class="input-field email" type="email" name="email" id="email" placeholder="" required />
+    </div>
+  	<br />
+
+    <!-- input field for company -->
+    <div class="label-field">
+        <label for="company">Company</label>
+    </div>
+    <div class="field-group">
+        <input class="input-field" type="text" name="company" id="company" placeholder="company" />
+    </div>
+    <br />
+
+            <!-- input field for phonenumber -->
+            <div class="label-field">
+                <label for="phone" id="phone">Phone</label>
+            </div>
+            <div class="field-group phone">
+                <div class="field">
+                    <input class="input-field" type="number" name="phone" id="areacode" placeholder="+62"
+                        required />
+                    <br />
+                    <label for="areacode">Area Code</label>
+                </div>
+                <div class="field">
+                    <input class="input-field" type="number" name="phone" id="phonenumber"
+                        placeholder="" required />
+                    <br />
+                    <label for="phonenumber">Phone Number</label>
+                </div>
+            </div>
+
+            <br />
+
+            <!-- select field for subject -->
+            <div class="label-field">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="field-group">
+                <select class="input-field" name="subject" id="subject" required>
+                    <option disabled selected>Choose Option</option>
+                    <option value="Student">Student</option>
+                    <option value="Worker">Worker</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </div>
+
+            <br />
+
+            <!-- radio field for checking customer -->
+            <div class="label-field check-customer">
+                <label for="check-customer">Are you an existing customer?</label>
+            </div>
+            <div>
+                <input type="radio" name="check-customer" id="check-yes" value="yes" required />
+                <label class="radio-label" for="check-yes">Yes</label>
+                <input type="radio" name="check-customer" id="check-no" value="no" required />
+                <label for="check-no">No</label>
+            </div>
+
+            <br>
+
+            <!-- button -->
+            <div class="btn text-right">
+                <button class="btn-submit" type="submit">Submit</button>
+            </div>
+        </center>
+        </form>
+    </div>
+</body>
+</html>
